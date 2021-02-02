@@ -34,7 +34,7 @@ namespace VirtualPet
                         Console.WriteLine("What would you like to name your pet?");                         // Pet name is done!
                         string nameOfPet = Console.ReadLine();
                         pet.SetName(nameOfPet);
-                        Console.WriteLine($"Congratulations! The name of your pet is: {pet.Name}");
+                        Console.WriteLine($"Congratulations! \nThe name of your pet is: {pet.Name}");
                         break;
                     case "3":
                         Console.WriteLine("Would you like to feed your pet?");                             // Need to create a method to feed animal with string
