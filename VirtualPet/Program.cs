@@ -3,9 +3,11 @@
 namespace VirtualPet
 {
     class Program //this is a change
+        //this is a change as well.
     {
         static void Main(string[] args)
         {
+            Pet virtualPet = new Pet();
             bool VirtualPet = true;
             while (VirtualPet)
             {
@@ -25,18 +27,22 @@ namespace VirtualPet
                 {
                     case "1": 
                        Console.WriteLine("What species of animal would you like your pet?");
+                        string speciesOfPet = Console.ReadLine();
                         break;
                     case "2":
-                        Console.WriteLine("What would you like to name your pet.");
+                        Console.WriteLine("What would you like to name your pet?");
+                        string nameOfPet = Console.ReadLine();
                         break;
                     case "3":
                         Console.WriteLine("Would you like to feed your pet?");
+                        string petFood = Console.ReadLine();
                         break;
                     case "4":
-                        Console.WriteLine("Would you like to play with your pet?");
+                        Console.WriteLine("What activity would you like to do with your pet?");
+                        string petGame = Console.ReadLine();
                         break;
                     case "5":
-                        Console.WriteLine("Check you pet's health.");
+                        Console.WriteLine($"Pet's health: {virtualPet.Health}");
                         break;
                     case "6":
                         Console.WriteLine("Good bye!");
