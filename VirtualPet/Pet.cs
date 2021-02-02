@@ -18,6 +18,8 @@ namespace VirtualPet
         public int Health { get; set; } = 30;
 
 
+
+
         public void SetName(string name)
         {
             Name = name;
