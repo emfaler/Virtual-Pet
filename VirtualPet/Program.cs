@@ -12,6 +12,8 @@ namespace VirtualPet
                 Console.Clear();
                 Console.WriteLine("Welcome to Pixel Pet!\n");
                 Console.WriteLine("What do you want do first?");
+                Console.WriteLine("Name your pet!");
+                Console.WriteLine("Pick your pet species");
                 Console.WriteLine("1. Feed your pet?");
                 Console.WriteLine("2. Play with your pet?");
                 Console.WriteLine("3. Check your pets health!");
@@ -22,17 +24,17 @@ namespace VirtualPet
                 switch (userChoice)
                 {
                     case "1":
-                        AreTheseIntegersEqual();
+                        ();
                         break;
                     case "2":
-                        EvenOrOdd();
+                        ();
                         break;
                     case "3":
-                        VowelOrConsonant();
+                        ();
                         break;
                         break;
                     case "q":
-                        keepThinking = false;
+                        VirtualPet = false;
                         Console.WriteLine("Good bye!");
                         break;
                     default:
