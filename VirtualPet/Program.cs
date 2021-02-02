@@ -45,6 +45,7 @@ namespace VirtualPet
                         string petGame = Console.ReadLine();
                         break;
                     case "5":
+                        pet.GetHealth();
                         Console.WriteLine($"Pet's health: {pet.Health}");
                         break;
                     case "6":
