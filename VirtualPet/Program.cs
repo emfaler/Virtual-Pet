@@ -28,6 +28,7 @@ namespace VirtualPet
                         string speciesOfPet = Console.ReadLine();
                         pet.SetSpecies(speciesOfPet);
                         Console.WriteLine($"The species of your animal is: {pet.Species}");
+                        Console.WriteLine(pet.Name + " is a " + pet.Species);
                         break;
                     case "2":
                         Console.WriteLine("What would you like to name your pet?");                         // Pet name is done!
