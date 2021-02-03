@@ -17,19 +17,6 @@ namespace VirtualPet
             pet.Boredom = startEnergy;
             pet.Health = startHealth;              // create methods for energy  set energy to 70 inital 
 
-
-            //List<Pet> animalType = new List<Pet>();
-            //animalType.Add("Dog");
-            //animalType.Add("Cat");
-            //animalType.Add("Bird");
-
-            //for (int i = 0; i < animalType.Count; i++)
-            //{
-            //    int menuNumber = i + 1;
-            //    Console.WriteLine("\tPress {0} for {1}.", menuNumber, animalType[i]);
-            //}
-
-
             bool VirtualPet = true;
 
             while (VirtualPet)
@@ -69,19 +56,17 @@ namespace VirtualPet
                         break;
                     case "3":
                         Console.WriteLine("What would you like to feed your pet?");
-                        Console.WriteLine($"{pet.Hunger }");                                               // Need to create a method to feed animal with string
-                        int petFood = Convert.ToInt32(Console.ReadLine());
-
+                        Console.WriteLine($"{pet.Hunger }");
                         Console.WriteLine("\nReturn to Main Menu.");
                         Console.ReadKey();
-                        Console.Clear();
+                        Console.Clear();                                   // Need to create a method to feed animal with string
+
                         // pet.(petFood);
                         break;
                     case "4":
                         Console.WriteLine("What activity would you like to do with your pet?");
-                        Console.WriteLine($"{pet.Boredom}");                                                // Need to create method for activity with string 
-                        string petGame = Console.ReadLine();
-                        Console.WriteLine("\nReturn to Main Menu.");            //change the place
+                        Console.WriteLine($"{pet.Boredom}");
+                        Console.WriteLine("\nReturn to Main Menu.");                                        //change the place
                         Console.ReadKey();
                         Console.Clear();
                         break;
@@ -89,10 +74,10 @@ namespace VirtualPet
                         pet.GetHealth();
                         Console.WriteLine("Pet's health:");
                         Console.WriteLine($"{pet.Health}");
-
                         Console.WriteLine("\nReturn to Main Menu.");
                         Console.ReadKey();
                         Console.Clear();
+
                         break;
                     case "6":
                         Console.WriteLine("Good bye!");
