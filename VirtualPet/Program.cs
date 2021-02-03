@@ -9,13 +9,13 @@ namespace VirtualPet
 
             Random random = new Random();
             int startHunger = random.Next(50);
-            int startThirst = random.Next(60);
             int startEnergy = random.Next(70);
+            int startHealth = random.Next(30);
 
             Pet pet = new Pet();
-            pet.Hunger = startHunger;
-            pet.Thirst = startThirst;               // create methods for thirst  set thrist to 60 inital
-            pet.Energy = startEnergy;               // create methods for energy  set energy to 70 inital 
+            pet.Hunger = startHunger;           // create methods for thirst  set thrist to 60 inital
+            pet.Boredom = startEnergy;
+            pet.Health = startHealth;              // create methods for energy  set energy to 70 inital 
 
 
             //List<Pet> animalType = new List<Pet>();
@@ -70,7 +70,9 @@ namespace VirtualPet
                         break;
                     case "5":
                         pet.GetHealth();
-                        Console.WriteLine($"Pet's health: {pet.Health}");
+                        Console.WriteLine($"Pet's health: \n");
+
+                        Pet.ShowPetStatus();
                         break;
                     case "6":
                         Console.WriteLine("Good bye!");
