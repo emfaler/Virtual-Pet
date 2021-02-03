@@ -47,8 +47,8 @@ namespace VirtualPet
 
                 switch (userChoice)
                 {
-                    case "1": 
-                       Console.WriteLine("What species of animal would you like?");                // Species is done!
+                    case "1":
+                        Console.WriteLine("What species of animal would you like?");                // Species is done!
                         string speciesOfPet = Console.ReadLine();
                         pet.SetSpecies(speciesOfPet);
                         Console.WriteLine($"The species of your animal is: {pet.Species}");
@@ -60,19 +60,20 @@ namespace VirtualPet
                         Console.WriteLine($"Congratulations! \nThe name of your pet is: {pet.Name}");
                         break;
                     case "3":
-                        Console.WriteLine("What would you like to feed your pet?");                        // Need to create a method to feed animal with string
+                        Console.WriteLine("What would you like to feed your pet?");
+                        Console.WriteLine($"{pet.Hunger }");                                               // Need to create a method to feed animal with string
                         int petFood = Convert.ToInt32(Console.ReadLine());
                         // pet.(petFood);
                         break;
                     case "4":
-                        Console.WriteLine("What activity would you like to do with your pet?");            // Need to create method for activity with string 
+                        Console.WriteLine("What activity would you like to do with your pet?");
+                        Console.WriteLine($"{pet.Boredom}");                                                // Need to create method for activity with string 
                         string petGame = Console.ReadLine();
                         break;
                     case "5":
                         pet.GetHealth();
-                        Console.WriteLine($"Pet's health: \n");
-
-                        Pet.ShowPetStatus();
+                        Console.WriteLine("Pet's health:");
+                        Console.WriteLine($"{pet.Health}");
                         break;
                     case "6":
                         Console.WriteLine("Good bye!");
