@@ -52,28 +52,48 @@ namespace VirtualPet
                         string speciesOfPet = Console.ReadLine();
                         pet.SetSpecies(speciesOfPet);
                         Console.WriteLine($"The species of your animal is: {pet.Species}");
+
+                        Console.WriteLine("\nReturn to Main Menu.");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case "2":
                         Console.WriteLine("What would you like to name your pet?");                         // Pet name is done!
                         string nameOfPet = Console.ReadLine();
                         pet.SetName(nameOfPet);
                         Console.WriteLine($"Congratulations! \nThe name of your pet is: {pet.Name}");
+
+                        Console.WriteLine("\nReturn to Main Menu.");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case "3":
                         Console.WriteLine("What would you like to feed your pet?");
                         Console.WriteLine($"{pet.Hunger }");                                               // Need to create a method to feed animal with string
                         int petFood = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("\nReturn to Main Menu.");
+                        Console.ReadKey();
+                        Console.Clear();
                         // pet.(petFood);
                         break;
                     case "4":
                         Console.WriteLine("What activity would you like to do with your pet?");
                         Console.WriteLine($"{pet.Boredom}");                                                // Need to create method for activity with string 
                         string petGame = Console.ReadLine();
+
+                        Console.WriteLine("\nReturn to Main Menu.");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case "5":
                         pet.GetHealth();
                         Console.WriteLine("Pet's health:");
                         Console.WriteLine($"{pet.Health}");
+
+                        Console.WriteLine("\nReturn to Main Menu.");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     case "6":
                         Console.WriteLine("Good bye!");
@@ -81,10 +101,6 @@ namespace VirtualPet
                     default:
                         break;
                 }
-                
-                Console.WriteLine("\nReturn to Main Menu.");
-                Console.ReadKey();
-                Console.Clear();
 
             }
         }
