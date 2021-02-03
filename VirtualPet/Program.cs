@@ -81,8 +81,7 @@ namespace VirtualPet
                         Console.WriteLine("What activity would you like to do with your pet?");
                         Console.WriteLine($"{pet.Boredom}");                                                // Need to create method for activity with string 
                         string petGame = Console.ReadLine();
-
-                        Console.WriteLine("\nReturn to Main Menu.");
+                        Console.WriteLine("\nReturn to Main Menu.");            //change the place
                         Console.ReadKey();
                         Console.Clear();
                         break;
