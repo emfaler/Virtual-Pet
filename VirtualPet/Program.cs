@@ -48,7 +48,7 @@ namespace VirtualPet
                 switch (userChoice)
                 {
                     case "1": 
-                       Console.WriteLine("What species of animal would you like your pet?");                // Species is done!
+                       Console.WriteLine("What species of animal would you like?");                // Species is done!
                         string speciesOfPet = Console.ReadLine();
                         pet.SetSpecies(speciesOfPet);
                         Console.WriteLine($"The species of your animal is: {pet.Species}");
