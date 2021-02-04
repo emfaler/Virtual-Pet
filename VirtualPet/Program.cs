@@ -18,9 +18,10 @@ namespace VirtualPet
             pet.Health = startHealth;
 
             bool VirtualPet = true;
-
+            
             do
             {
+                pet.Tick();
                 Console.WriteLine("Welcome to Pixel Pet!\n");
                 Console.WriteLine("What do you want to do?");
                 Console.WriteLine("1. Pick your pet species");
@@ -49,8 +50,6 @@ namespace VirtualPet
                         Console.WriteLine($"Congratulations! \nThe name of your pet is: {pet.Name}");
                         break;
                     case "3":
-                        //Console.WriteLine( $"How much would you like to feed {pet.Name}");
-                        //int userFeed = Convert.ToInt32(Console.ReadLine());
                         pet.Feed();
                         break;
                     case "4":
@@ -75,7 +74,7 @@ namespace VirtualPet
                         break;
                 }
 
-                Console.WriteLine("Return to main menu");
+                Console.WriteLine("Return to main menu\n");
                 Console.ReadKey();
                 Console.Clear();
 

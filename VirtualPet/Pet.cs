@@ -56,11 +56,21 @@ namespace VirtualPet
         public void Feed()
         {
             Hunger -= 40;
+
+            if (Hunger < 0)
+            {
+                Hunger = 0;
+            }          
         }
 
         public void SeeDoctor()
         {
             Health += 30;
+
+            if (Health > 100)
+            {
+                Health = 100;
+            }
         }
 
         public void Play()
@@ -68,6 +78,23 @@ namespace VirtualPet
             Hunger += 10;
             Boredom -= 20;
             Health += 10;
+
+            if (Hunger > 100)
+            {
+                Hunger = 100;
+            }
+
+            if (Boredom < 0)
+            {
+                Boredom = 0;
+            }
+
+            if (Health > 100)
+            {
+                Health = 100;
+            }
+
+
         }
 
         public void Tick()
@@ -75,17 +102,21 @@ namespace VirtualPet
             Hunger += 5;
             Boredom += 5;
             Health -= 5;
+
+            if (Hunger > 100)
+            {
+                Hunger = 100;
+            }
+
+            if (Boredom > 100)
+            {
+                Boredom = 100;
+            }
+
+            if (Health < 0)
+            {
+                Health = 0;
+            }
         }
-
-
-
-
-
-
-
-
-
-
-
     }
 }
