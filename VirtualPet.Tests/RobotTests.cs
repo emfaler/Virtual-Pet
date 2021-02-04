@@ -7,8 +7,8 @@ namespace VirtualPet.Tests
 {
     public class RobotTests
     {
-        public RobotPet robotPets; 
-        
+        public RobotPet robotPets;
+
         public RobotTests()
         {
             robotPets = new RobotPet();
@@ -103,19 +103,19 @@ namespace VirtualPet.Tests
         }
 
         [Fact]
-        public void Tick_Should_Increase_GasLevel_By_5()
+        public void Tick_Should_Increase_GasLevel_By_10()
         {
             robotPets.Tick();
 
-            Assert.Equal(55, robotPets.GetGasLevel());
+            Assert.Equal(60, robotPets.GetGasLevel());
         }
 
         [Fact]
-        public void Tick_Should_Increase_Charger_By_5()
+        public void Tick_Should_Increase_Charger_By_15()
         {
             robotPets.Tick();
 
-            Assert.Equal(65, robotPets.GetCharger());
+            Assert.Equal(75, robotPets.GetCharger());
         }
 
         [Fact]
@@ -127,3 +127,5 @@ namespace VirtualPet.Tests
         }
     }
 }
+
+

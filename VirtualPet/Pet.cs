@@ -7,9 +7,9 @@ namespace VirtualPet
     public class Pet
     {
 
-        public string Name { get; set; }
+        public virtual string Name { get; set; }
 
-        public string Species { get; set; }
+        public virtual string Species { get; set; }
 
         public int Hunger { get; set; } = 50;
 
@@ -17,13 +17,13 @@ namespace VirtualPet
 
         public int Health { get; set; } = 30;
 
-        public void SetName(string name)
+        public virtual void SetName(string name)
 
         {
             Name = name;
         }
 
-        public string GetName()
+        public virtual string GetName()
         {
             return Name;
         }
@@ -60,7 +60,7 @@ namespace VirtualPet
             if (Hunger < 0)
             {
                 Hunger = 0;
-            }          
+            }
         }
 
         public void SeeDoctor()
@@ -73,50 +73,20 @@ namespace VirtualPet
             }
         }
 
-        public void Play()
+        public virtual void Play()
         {
             Hunger += 10;
             Boredom -= 20;
             Health += 10;
-
-            if (Hunger > 100)
-            {
-                Hunger = 100;
-            }
-
-            if (Boredom < 0)
-            {
-                Boredom = 0;
-            }
-
-            if (Health > 100)
-            {
-                Health = 100;
-            }
-
-
         }
 
-        public void Tick()
+        public virtual void Tick()
         {
             Hunger += 5;
             Boredom += 5;
             Health -= 5;
-
-            if (Hunger > 100)
-            {
-                Hunger = 100;
-            }
-
-            if (Boredom > 100)
-            {
-                Boredom = 100;
-            }
-
-            if (Health < 0)
-            {
-                Health = 0;
-            }
         }
     }
 }
+
+
