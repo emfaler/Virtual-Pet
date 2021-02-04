@@ -4,8 +4,13 @@ using System.Text;
 
 namespace VirtualPet
 {
-    public class RobotPet
+    public class RobotPet : Pet
     {
+
+
+
+
+
 
     }
 

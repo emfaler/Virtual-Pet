@@ -4,7 +4,32 @@ using System.Text;
 
 namespace VirtualPet.Tests
 {
-    class OrganicPetTests
+    public class OrganicPetTests
     {
+        public OrganicPet organicPets;
+
+        public OrganicPetTests()
+        {
+            organicPets = new OrganicPet();
+
+
+
+
+
+
+
+
+
+        }
+        
+
+
+
+
+
+
+
+
+
     }
 }
