@@ -17,7 +17,13 @@ namespace VirtualPet.Tests
         
         
         [Fact]
-        public void 
+        public void
+            public void SetName_Should_Assign_Robot_Pet_Name_Property()
+        {
+            testPet.SetName("Bolt");
+
+            Assert.Equal("Bolt", testPet.Name);
+        }
 
 
 
