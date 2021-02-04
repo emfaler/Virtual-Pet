@@ -10,11 +10,11 @@ namespace VirtualPet
 
         public string Species { get; set; }
 
-        public int GasLevel { get; set; } = 50;
+        public int GasLevel { get; set; } = 50; //food
 
         public int Boredom { get; set; } = 60;
 
-        public int OilLevel { get; set; } = 30;
+        public int OilLevel { get; set; } = 30; //health
 
         public void SetName(string name)
 
@@ -136,4 +136,6 @@ namespace VirtualPet
 
 
         }
+    }
+
 }
