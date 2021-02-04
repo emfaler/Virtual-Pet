@@ -127,16 +127,3 @@ namespace VirtualPet.Tests
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-    }
-}
