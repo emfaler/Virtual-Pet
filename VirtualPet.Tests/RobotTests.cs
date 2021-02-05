@@ -15,7 +15,7 @@ namespace VirtualPet.Tests
         }
 
         [Fact]
-        public void Pet_Should_Have_GasLevel()
+        public void robotPets_Should_Have_GasLevel()
         {
             robotPets.GasLevel = 100;
 
@@ -25,13 +25,13 @@ namespace VirtualPet.Tests
         [Fact]
         public void GetGasLevel_Should_Return_Initial_GasLevel_Level_Of_50()
         {
-            int testPetGasLevel = robotPets.GetGasLevel();
+            int robotPetsGasLevel = robotPets.GetGasLevel();
 
-            Assert.Equal(50, testPetGasLevel);
+            Assert.Equal(50, robotPetsGasLevel);
         }
 
         [Fact]
-        public void Pet_Should_Have_Charger()
+        public void robotPets_Should_Have_Charger()
         {
             robotPets.Charger = 100;
 
@@ -41,13 +41,13 @@ namespace VirtualPet.Tests
         [Fact]
         public void GetCharger_Should_Return_Initial_Charger_Level_Of_60()
         {
-            int testPetCharger = robotPets.GetCharger();
+            int robotPetsCharger = robotPets.GetCharger();
 
-            Assert.Equal(60, testPetCharger);
+            Assert.Equal(60, robotPetsCharger);
         }
 
         [Fact]
-        public void Pet_Should_Have_OilLevel()
+        public void robotPets_Should_Have_OilLevel()
         {
             robotPets.OilLevel = 100;
 
@@ -57,7 +57,7 @@ namespace VirtualPet.Tests
         [Fact]
         public void GetOilLevel_Should_Return_Initial_OilLevel_Level_Of_30()
         {
-            int testPetHealth = robotPets.GetOilLevel();
+            int robotPetOilLevel = robotPets.GetOilLevel();
 
             Assert.Equal(30, robotPets.OilLevel);
         }

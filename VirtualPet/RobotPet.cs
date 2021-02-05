@@ -6,27 +6,11 @@ namespace VirtualPet
 {
     public class RobotPet : Pet
     {
-
-        public override string Name { get; set; }
-
-        public override string Species { get; set; }
-
         public int GasLevel { get; set; } = 50;   //hunger
 
         public int Charger { get; set; } = 60;  //Energy
 
         public int OilLevel { get; set; } = 30;   //health
-
-        public override void SetName(string name)
-
-        {
-            Name = name;
-        }
-
-        public override string GetName()
-        {
-            return Name;
-        }
 
         public int GetGasLevel()
         {
