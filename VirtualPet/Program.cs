@@ -15,9 +15,9 @@ namespace VirtualPet
             int startHealth = random.Next(30, 50);
 
             //robot pet
-            int startGasLevel = random.Next();
-            int startOilLevel = random.Next();
-            int startCharger = random.Next();
+            int startGasLevel = random.Next(10, 50);
+            int startOilLevel = random.Next(30, 60);
+            int startCharger = random.Next(5, 20);
 
             Pet pet = new Pet();
 
