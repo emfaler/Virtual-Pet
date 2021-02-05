@@ -56,22 +56,30 @@ namespace VirtualPet
                         Console.WriteLine("What species of animal would you like?");                
                         string speciesOfPet = Console.ReadLine();
                         pet.SetSpecies(speciesOfPet);
-                        Console.WriteLine($"The species of your animal is: {pet.Species}");
+                        Console.WriteLine("\n");
+                        Console.WriteLine($"The species of your animal is: {pet.Species}\n");
                         break;
                     case "2":
                         Console.WriteLine("What would you like to name your pet?");                
                         string nameOfPet = Console.ReadLine();
                         pet.SetName(nameOfPet);
-                        Console.WriteLine($"Congratulations! \nThe name of your pet is: {pet.Name}");
+                        Console.WriteLine("\n");
+                        Console.WriteLine($"Congratulations! \nThe name of your pet is: {pet.Name}\n");
                         break;
                     case "3":
                         organicPet.Feed();
+                        Console.WriteLine($"Would you like to feed {pet.Name}?");
+                        Console.WriteLine($"{pet.Name} hunger levels are:{organicPet.Hunger}\n");
                         break;
                     case "4":
                         organicPet.Play();
+                        Console.WriteLine($"Would you like to play with {pet.Name}?");
+                        Console.WriteLine($"{pet.Name} boredom levels are:{organicPet.Energy}\n");
                         break;
                     case "5":
                         organicPet.SeeDoctor();
+                        Console.WriteLine($"Would you like to take care of {pet.Name}?");
+                        Console.WriteLine($"{pet.Name} Health levels are:{organicPet.Health}\n");
                         break;
                     case "6":
                         Console.WriteLine("Check overall status of pet:\n");
