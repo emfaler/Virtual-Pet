@@ -8,8 +8,6 @@ namespace VirtualPet
         {
 
             Random random = new Random();
-            //pet
-            int startBoredom = random.Next(50, 60);
 
             //organic pet
             int startHealth = random.Next(30, 50);
@@ -21,17 +19,13 @@ namespace VirtualPet
             int startOilLevel = random.Next();
             int startCharger = random.Next();
 
-            //pet
             Pet pet = new Pet();
-            pet.Boredom = startBoredom;
 
-            //organic pet
             OrganicPet organicPet = new OrganicPet();
-            organicPet.Hunger = startHunger;
             organicPet.Health = startHealth;
+            organicPet.Hunger = startHunger;
             organicPet.Energy = startEnergy;
 
-            //robot pet
             RobotPet robotPet = new RobotPet();
             robotPet.GasLevel = startGasLevel;
             robotPet.OilLevel = startOilLevel;
@@ -42,7 +36,7 @@ namespace VirtualPet
             
             do
             {
-                pet.Tick();
+                organicPet.Tick();
                 Console.WriteLine("Welcome to Pixel Pet!\n");
                 Console.WriteLine("What do you want to do?");
                 Console.WriteLine("1. Pick your pet species");
@@ -74,7 +68,7 @@ namespace VirtualPet
                         organicPet.Feed();
                         break;
                     case "4":
-                        pet.Play();
+                        organicPet.Play();
                         break;
                     case "5":
                         organicPet.SeeDoctor();
@@ -83,7 +77,7 @@ namespace VirtualPet
                         Console.WriteLine("Check overall status of pet:\n");
                         Console.WriteLine($"The name of your pet is {pet.Name} with a species type of {pet.Species}");                     
                         Console.WriteLine($"Hunger: {organicPet.Hunger}");
-                        Console.WriteLine($"Boredom: {pet.Boredom}");
+                        Console.WriteLine($"Boredom: {organicPet.Energy}");
                         Console.WriteLine($"Health: {organicPet.Health}");
                         break;
                     case "7":

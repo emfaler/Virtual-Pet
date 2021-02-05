@@ -11,8 +11,6 @@ namespace VirtualPet
 
         public virtual string Species { get; set; }
 
-        public int Boredom { get; set; } = 60;
-
         //Space
 
         public virtual void SetName(string name)
@@ -36,19 +34,6 @@ namespace VirtualPet
             return Species;
         }
         
-        public int GetBoredom()
-        {
-            return Boredom;
-        }
-public virtual void Play()
-        {
-            Boredom -= 20;
-        }
-
-        public virtual void Tick()
-        {
-            Boredom += 5;
-        }
     }
 }
 

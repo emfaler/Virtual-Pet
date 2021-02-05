@@ -69,37 +69,5 @@ namespace VirtualPet.Tests
 
              Assert.Equal("Dog", testPetSpecies);
         }
-
-        [Fact]
-        public void Pet_Should_Have_Boredom()
-        {
-             testPet.Boredom = 100;
-            
-             Assert.Equal(100, testPet.Boredom);
-        }
-
-        [Fact]
-        public void GetBoredom_Should_Return_Initial_Boredom_Level_Of_60()
-        {
-             int testPetBoredom = testPet.GetBoredom();
-
-             Assert.Equal(60, testPetBoredom);
-        }
-
-        [Fact]
-        public void Play_Should_Decrease_Boredom_By_20()
-        {
-             testPet.Play();
-
-             Assert.Equal(40, testPet.GetBoredom());
-        }
-
-        [Fact]
-        public void Tick_Should_Increase_Boredom_By_5()
-        {
-             testPet.Tick();
-
-             Assert.Equal(65, testPet.GetBoredom());
-        }
     }
 }
