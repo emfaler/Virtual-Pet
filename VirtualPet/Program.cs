@@ -8,16 +8,35 @@ namespace VirtualPet
         {
 
             Random random = new Random();
-            int startHunger = random.Next(50, 70);
+            //pet
             int startBoredom = random.Next(50, 60);
-            int startHealth = random.Next(30, 50);
 
+            //organic pet
+            int startHealth = random.Next(30, 50);
+            int startHunger = random.Next(50, 70);
+            int startEnergy = random.Next();
+
+            //robot pet
+            int startGasLevel = random.Next();
+            int startOilLevel = random.Next();
+            int startCharger = random.Next();
+
+            //pet
             Pet pet = new Pet();
             pet.Boredom = startBoredom;
 
+            //organic pet
             OrganicPet organicPet = new OrganicPet();
-            organicPet.Health = startHealth;
             organicPet.Hunger = startHunger;
+            organicPet.Health = startHealth;
+            organicPet.Energy = startEnergy;
+
+            //robot pet
+            RobotPet robotPet = new RobotPet();
+            robotPet.GasLevel = startGasLevel;
+            robotPet.OilLevel = startOilLevel;
+            robotPet.Charger = startCharger;
+
 
             bool VirtualPet = true;
             
