@@ -103,19 +103,19 @@ namespace VirtualPet.Tests
         }
 
         [Fact]
-        public void Tick_Should_Increase_Hunger_By_10()
+        public void Tick_Should_Increase_Hunger_By_5()
         {
             organicPets.Tick();
 
-            Assert.Equal(60, organicPets.GetHunger());
+            Assert.Equal(55, organicPets.GetHunger());
         }
 
         [Fact]
-        public void Tick_Should_Increase_Energy_By_15()
+        public void Tick_Should_Increase_Energy_By_5()
         {
             organicPets.Tick();
 
-            Assert.Equal(75, organicPets.GetEnergy());
+            Assert.Equal(65, organicPets.GetEnergy());
         }
 
         [Fact]
