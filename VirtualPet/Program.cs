@@ -13,9 +13,11 @@ namespace VirtualPet
             int startHealth = random.Next(30, 50);
 
             Pet pet = new Pet();
-            pet.Hunger = startHunger;
             pet.Boredom = startBoredom;
-            pet.Health = startHealth;
+
+            OrganicPet organicPet = new OrganicPet();
+            organicPet.Health = startHealth;
+            organicPet.Hunger = startHunger;
 
             bool VirtualPet = true;
             
@@ -50,20 +52,20 @@ namespace VirtualPet
                         Console.WriteLine($"Congratulations! \nThe name of your pet is: {pet.Name}");
                         break;
                     case "3":
-                        pet.Feed();
+                        organicPet.Feed();
                         break;
                     case "4":
                         pet.Play();
                         break;
                     case "5":
-                        pet.SeeDoctor();
+                        organicPet.SeeDoctor();
                         break;
                     case "6":
                         Console.WriteLine("Check overall status of pet:\n");
                         Console.WriteLine($"The name of your pet is {pet.Name} with a species type of {pet.Species}");                     
-                        Console.WriteLine($"Hunger: {pet.Hunger}");
+                        Console.WriteLine($"Hunger: {organicPet.Hunger}");
                         Console.WriteLine($"Boredom: {pet.Boredom}");
-                        Console.WriteLine($"Health: {pet.Health}");
+                        Console.WriteLine($"Health: {organicPet.Health}");
                         break;
                     case "7":
                         VirtualPet = false;
