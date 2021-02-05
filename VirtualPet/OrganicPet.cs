@@ -47,14 +47,14 @@ namespace VirtualPet
             }
         }
 
-        public virtual void Play()
+        public override void Play()
         {
             Hunger += 10;
             Energy -= 20;
             Health += 10;
         }
 
-        public virtual void Tick()
+        public override void Tick()
         {
             Hunger += 5;
             Energy += 5;
