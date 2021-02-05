@@ -11,25 +11,10 @@ namespace VirtualPet.Tests
         public OrganicPetTests()
         {
             organicPets = new OrganicPet();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
+        [Fact]
+
+        public void 
         
 
 
