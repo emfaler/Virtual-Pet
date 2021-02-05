@@ -50,15 +50,39 @@ namespace VirtualPet
         public override void Play()
         {
             Hunger += 10;
+            if (Hunger > 100)
+            {
+                Hunger = 100;
+            }
             Energy -= 20;
+            if (Energy < 0)
+            {
+                Energy = 0;
+            }
             Health += 10;
+            if (Health > 100)
+            {
+                Hunger = 100;
+            }
         }
 
         public override void Tick()
         {
             Hunger += 5;
+            if (Hunger > 100)
+            {
+                Hunger = 100;
+            }
             Energy += 5;
+            if (Energy > 100)
+            {
+                Energy = 100;
+            }
             Health -= 5;
+            if (Health < 0)
+            {
+                Health = 0;
+            }
         }
     }
 }

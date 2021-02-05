@@ -67,8 +67,6 @@ namespace VirtualPet
             {
                 OilLevel = 150;
             }
-
-
         }
 
         public override void Tick()

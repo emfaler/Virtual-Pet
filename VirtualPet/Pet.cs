@@ -11,10 +11,6 @@ namespace VirtualPet
 
         public virtual string Species { get; set; }
 
-
-
-        //Space
-
         public virtual void SetName(string name)
 
         {
@@ -35,8 +31,8 @@ namespace VirtualPet
         {
             return Species;
         }
-       
-        
+
+
         public virtual void Play()
         {
 
@@ -46,7 +42,6 @@ namespace VirtualPet
         {
 
         }
-
     }
 }
 

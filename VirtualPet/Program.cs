@@ -39,12 +39,12 @@ namespace VirtualPet
                 organicPet.Tick();
                 Console.WriteLine("Welcome to Pixel Pet!\n");
                 Console.WriteLine("What do you want to do?");
-                Console.WriteLine("1. Pick your pet species");
+                Console.WriteLine("1. Pick your species of pet");
                 Console.WriteLine("2. Name your pet!");
                 Console.WriteLine("3. Feed your pet");
                 Console.WriteLine("4. Play with your pet");
                 Console.WriteLine("5. Take pet to the doctor");
-                Console.WriteLine("6. Visit the pet store!");
+                Console.WriteLine("6. Visit the pet shelter!");
                 Console.WriteLine("7. Check the status of you pet");
                 Console.WriteLine("8. Exit game.");
 
@@ -57,8 +57,6 @@ namespace VirtualPet
                         Console.WriteLine("What species of animal would you like?");                
                         string speciesOfPet = Console.ReadLine();
                         pet.SetSpecies(speciesOfPet);
-
-                        Console.WriteLine("\n");
 
                         Console.WriteLine($"The species of your animal is: {pet.Species}\n");
                         break;
@@ -93,25 +91,6 @@ namespace VirtualPet
 
                     case "6":
                         Console.WriteLine("Welcome to the Pixel Pet Shelter!!");
-                        Console.WriteLine("We have a large arrangement of organic animals or robot animals!");
-                        Console.WriteLine("Please take a look around\n");
-
-                        Console.ReadKey();
-                        Console.Clear();
-
-                        Console.WriteLine("Here's our selection of organic pets!");
-                        Console.WriteLine("1:Cat");
-                        Console.WriteLine("2:Dog");
-                        Console.WriteLine("3:Bird\n");
-
-                        Console.ReadKey();
-                        Console.Clear();
-
-                        Console.WriteLine("Here's our selection of robot pets");
-                        Console.WriteLine("1:Robo Cat");
-                        Console.WriteLine("2:Robo Dog");
-                        Console.WriteLine("3:Robo Bird\n");
-
                         break; 
 
                     case "7":
@@ -121,7 +100,6 @@ namespace VirtualPet
                         Console.WriteLine($"Boredom: {organicPet.Energy}");
                         Console.WriteLine($"Health: {organicPet.Health}");
                         break;
-
 
                     case "8":
                         VirtualPet = false;
